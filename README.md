@@ -2,23 +2,15 @@
 [中文]
 
 1. MiCode便签是小米便签的社区开源版，由MIUI团队(www.miui.com) 发起并贡献第一批代码，遵循NOTICE文件所描述的开源协议，
-   今后为MiCode社区(www.micode.net) 拥有，并由社区发布和维护。
+## XTU软件工程实践开发
+小米便签项目修改傻瓜板,直接git clone后在Android studio中打开,配置好基本依赖项后导入已配置好的gradle项目即可,一键式操作
 
-2. Bug反馈和跟踪，请访问Github,
-   https://github.com/MiCode/Notes/issues?sort=created&direction=desc&state=open
-
-3. 功能建议和综合讨论，请访问MiCode,
-   http://micode.net/forum.php?mod=forumdisplay&fid=38
-
-
-[English]
-
-1. MiCode Notes is open source edition of XM notepad, it's first initiated and sponsored by MIUI team (www.miui.com).
-   It's opened under license described by NOTICE file. It's owned by the MiCode community (www.micode.net). In future,
-   the MiCode community will release and maintain this project.
-
-2. Regarding issue tracking, please visit Github,
-   https://github.com/MiCode/Notes/issues?sort=created&direction=desc&state=open
-
-3. Regarding feature request and general discussion, please visit Micode forum,
-   http://micode.net/forum.php?mod=forumdisplay&fid=38
+1. git clone本仓库
+```bash
+git clone https://github.moeyy.xyz/https://github.com/nekocatso/MiNotes-master.git
+```
+2. 打开Android studio后导入本项目,安装好自带的SDK与配置好环境
+3. 修改本项目文件夹下~\gradle\wrapper\gradle-wrapper.properties中的
+distributionUrl=file:///C:/Users/Administrator/.gradle/wrapper/dists/gradle-8.4-bin.zip
+把其中的gradle文件下载后放入指定地点即可
+4. 点击build后直接调试运行即可
